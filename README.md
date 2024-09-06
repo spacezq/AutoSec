@@ -7,8 +7,6 @@ Auto_scanweb is an automated web domain enumeration and vulnerability scanning s
 - [Setup](#setup)
 - [Usage](#usage)
 - [Tools Used](#tools-used)
-- [Contribution](#contribution)
-- [License](#license)
 
 ## Installation
 
@@ -44,3 +42,16 @@ Example:
 ./auto.sh example.com
 ```
 The results will be saved in the respective folders created under the domain's directory.
+
+Tools Used
+Auto_scanweb utilizes the following tools for domain enumeration and scanning:
+Subfinder: Fast passive subdomain enumeration tool.
+Assetfinder: Another tool for finding subdomains.
+Findomain: High-performance subdomain finder.
+Amass: OWASP Amass performs network mapping of attack surfaces and external asset discovery using open source information gathering and active reconnaissance techniques.
+Httpx: Fast and multi-purpose HTTP toolkit.
+Waymore: A powerful crawler that extracts URLs and parameters.
+Katana: Web crawling tool with parameter extraction.
+Nuclei: Fast, customizable vulnerability scanner based on template files.
+Ffuf: Fuzzing tool for discovering directories, files, and parameters.
+GNU Parallel: Utility for executing jobs in parallel.
