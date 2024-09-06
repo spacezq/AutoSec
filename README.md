@@ -1,19 +1,19 @@
-# Automated Recon and Scanning Tool
+# Auto_scanweb
 
-This project is designed to automate the process of domain enumeration, scanning for vulnerabilities, and sending results to Burp Suite for further testing.
+Auto_scanweb is an automated web domain enumeration and vulnerability scanning script. It performs passive reconnaissance, subdomain enumeration, live domain detection, vulnerability scanning, and sends data to Burp Suite for further manual testing.
 
-## Features
-- Subdomain enumeration using multiple tools
-- Identifying live domains
-- Crawling URLs for interesting files and parameters
-- Vulnerability scanning with Nuclei
-- Directory fuzzing with FFUF
-- Automated submission of data to Burp Suite for further testing
+## Table of Contents
+- [Installation](#installation)
+- [Setup](#setup)
+- [Usage](#usage)
+- [Tools Used](#tools-used)
+- [Contribution](#contribution)
+- [License](#license)
 
-## Setup
+## Installation
 
-1. Clone the repository:
+To get started with Auto_scanweb, clone the repository and navigate to the project directory:
 
-   ```bash
-   git clone https://github.com/yourusername/recon-scanner.git
-   cd recon-scanner
+```bash
+git clone https://github.com/spacezq/Auto_scanweb.git
+cd Auto_scanweb
