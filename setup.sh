@@ -61,4 +61,8 @@ echo "[+] Installing qsreplace..."
 go install -v github.com/tomnomnom/qsreplace@latest
 sudo cp ~/go/bin/qsreplace /usr/local/bin/
 
+# Make sure tools are up to date
+echo "[+] Ensuring all tools are updated..."
+go get -u all
+
 echo "[+] All tools installed successfully!"
