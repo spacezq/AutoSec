@@ -11,6 +11,7 @@ sudo apt install -y git curl wget parallel
 # Install Go (required for subfinder, assetfinder, and others)
 sudo apt install gccgo-go -y
 sudo apt install golang-go -y
+sudo apt-get install dos2unix
 
 # Install Subfinder
 echo "[+] Installing Subfinder..."
