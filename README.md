@@ -15,6 +15,7 @@ To get started with Auto_scanweb, clone the repository and navigate to the proje
 ```bash
 git clone https://github.com/spacezq/Auto_scanweb.git
 cd Auto_scanweb
+sudo apt install dos2unix
 ```
 Automated Setup
 Alternatively, you can use the provided setup.sh script to automate the installation process for the required tools:
@@ -22,7 +23,6 @@ Alternatively, you can use the provided setup.sh script to automate the installa
 Run the conversion command on the setup.sh file:
 
 ```bash
-Copy code
 dos2unix setup.sh
 ```
 
