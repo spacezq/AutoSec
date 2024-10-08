@@ -9,33 +9,23 @@ echo "[+] Installing dependencies..."
 sudo apt install -y git curl wget parallel
 
 # Install Go (required for subfinder, assetfinder, and others)
-echo "[+] Installing Go..."
-wget https://golang.org/dl/go1.20.5.linux-amd64.tar.gz
-sudo tar -xvf go1.20.5.linux-amd64.tar.gz -C /usr/local
-echo "export PATH=\$PATH:/usr/local/go/bin" >> ~/.bashrc
-source ~/.bashrc
-
-
 sudo apt install gccgo-go -y
 sudo apt install golang-go -y
 
-
-
 # Install Subfinder
 echo "[+] Installing Subfinder..."
-go install -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest
-sudo cp ~/go/bin/subfinder /usr/local/bin/
+sudo apt install subfinder
 
 # Install Assetfinder
 echo "[+] Installing Assetfinder..."
-go install -v github.com/tomnomnom/assetfinder@latest
-sudo cp ~/go/bin/assetfinder /usr/local/bin/
+sudo apt install assetfinder
 
 # Install Findomain
 echo "[+] Installing Findomain..."
-wget https://github.com/findomain/findomain/releases/download/8.2.1/findomain-linux
-chmod +x findomain-linux
-sudo mv findomain-linux /usr/local/bin/findomain
+curl -LO https://github.com/findomain/findomain/releases/latest/download/findomain-linux.zip
+unzip findomain-linux.zip
+chmod +x findomain
+sudo mv findomain /usr/bin/findomain
 
 # Install Amass
 echo "[+] Installing Amass..."
@@ -48,10 +38,7 @@ sudo cp ~/go/bin/httpx /usr/local/bin/
 
 # Install Waymore
 echo "[+] Installing Waymore..."
-git clone https://github.com/xnl-h4ck3r/waymore.git
-cd waymore
-pip install -r requirements.txt
-sudo cp waymore.py /usr/local/bin/waymore
+sudo apt install waymore
 
 # Install Katana
 echo "[+] Installing Katana..."
