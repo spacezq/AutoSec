@@ -15,6 +15,12 @@ sudo tar -xvf go1.20.5.linux-amd64.tar.gz -C /usr/local
 echo "export PATH=\$PATH:/usr/local/go/bin" >> ~/.bashrc
 source ~/.bashrc
 
+
+sudo apt install gccgo-go -y
+sudo apt install golang-go -y
+
+
+
 # Install Subfinder
 echo "[+] Installing Subfinder..."
 go install -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest
