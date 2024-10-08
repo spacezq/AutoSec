@@ -36,7 +36,6 @@ Usage
 To run the Auto_scanweb script, use the following command:
 
 ```bash
-Copy code
 ./auto.sh <domain>
 ```
 Replace <domain> with the target domain you want to scan. The script will perform the following actions:
