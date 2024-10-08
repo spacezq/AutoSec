@@ -19,6 +19,13 @@ cd Auto_scanweb
 Automated Setup
 Alternatively, you can use the provided setup.sh script to automate the installation process for the required tools:
 
+Run the conversion command on the setup.sh file:
+
+```bash
+Copy code
+dos2unix setup.sh
+```
+
 ```bash
 chmod +x setup.sh
 ./setup.sh
